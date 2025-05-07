@@ -1,0 +1,41 @@
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.Issues {
+  border: 1px solid #364156;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  background-color: #364156;
+  max-width: 60rem;
+  border-radius: 30;
+}
+
+.IssueInfo {
+  padding: 2rem;
+  background-color: #364156;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  max-width: 60rem;
+  min-width: 60rem;
+  border-radius: 30;
+}
+
+.IssueComments {
+  background-color: #364156;
+  padding: 2rem;
+  border: 1px dashed #364156;
+  margin-bottom: 2rem;
+  max-width: 60rem;
+  min-width: 60rem;
+  border-radius: 30;
+}
+
+.border {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
