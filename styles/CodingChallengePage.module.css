@@ -12,6 +12,7 @@
   background-color: #364156;
   max-width: 60rem;
   border-radius: 30;
+  overflow-wrap: anywhere;
 }
 
 .IssueInfo {
@@ -22,6 +23,7 @@
   max-width: 60rem;
   min-width: 60rem;
   border-radius: 30;
+  overflow-wrap: anywhere;
 }
 
 .IssueComments {
@@ -32,6 +34,7 @@
   max-width: 60rem;
   min-width: 60rem;
   border-radius: 30;
+  overflow-wrap: anywhere;
 }
 
 .border {

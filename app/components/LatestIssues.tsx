@@ -22,7 +22,7 @@ type GitHubResponse = {
   }
 }
 
-export default function ReactIssues() {
+export default function LatestIssues() {
   const [issues, setIssues] = useState<Issue[]>([])
   const [error, setError] = useState<string | null>(null)
 
@@ -81,7 +81,7 @@ export default function ReactIssues() {
       <ul>
         {issues.map(issue => (
           <li key={issue.id}>
-            <Link href={`/issues/${issue.id}`}>
+            <Link href={`/${issue.number}`}>
               #{issue.number}: {issue.title}
             </Link>
           </li>
