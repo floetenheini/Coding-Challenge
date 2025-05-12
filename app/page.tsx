@@ -72,7 +72,7 @@ const CodingChallengeLandingPage = () => {
   }
   useEffect(() => {
     fetchIssues(issueState)
-  }, [isOpen])
+  }, [isOpen, issueState])
 
   const handleClick = () => {
     setIsOpen(!isOpen)
