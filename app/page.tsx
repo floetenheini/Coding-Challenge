@@ -85,13 +85,11 @@ const CodingChallengeLandingPage = () => {
     <>
       <div className={styles.border}>
         <h1 className={styles.h1}>Coding Challenge Jonas Fischer</h1>
-        <div className={styles.ButtonBox}>
+
+        <div className={styles.Issues}>
           <button className={styles.buttonIssueState} onClick={handleClick}>
             {isOpen ? 'OPEN' : 'CLOSED'}
           </button>
-        </div>
-
-        <div className={styles.Issues}>
           <div>
             <h2>Letzte 20 {isOpen ? 'Offene' : 'Geschlossene'} Issues für React:</h2>
             <br />

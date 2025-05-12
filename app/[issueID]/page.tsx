@@ -68,7 +68,7 @@ const CodingChallengeDetailsPage = () => {
         comments(first: 10) {
           nodes {
             id
-            body
+            body  
             author {
               login
               url
