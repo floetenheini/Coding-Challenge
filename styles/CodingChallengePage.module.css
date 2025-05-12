@@ -48,3 +48,33 @@
 .CommentsBox {
   margin-top: 2rem;
 }
+
+.ButtonBox {
+  margin-bottom: 1rem;
+}
+
+.buttonIssueState {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonIssueState:hover {
+  background-color: #919ef3;
+  border-color: #999;
+}
+
+.buttonIssueState:active {
+  background-color: #e0e0e0;
+  border-color: #666;
+}
+
+.buttonIssueState:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100, 100, 100, 0.3);
+}
