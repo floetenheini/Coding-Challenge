@@ -91,7 +91,7 @@ const CodingChallengeLandingPage = () => {
             {isOpen ? 'OPEN' : 'CLOSED'}
           </button>
           <div>
-            <h2>Letzten 20 {isOpen ? 'Offene' : 'Geschlossene'} Issues für React:</h2>
+            <h2>Letzten 20 {isOpen ? 'Offenen' : 'Geschlossenen'} Issues für React Repository:</h2>
             <br />
             <ul>
               {issues.map(issue => (
