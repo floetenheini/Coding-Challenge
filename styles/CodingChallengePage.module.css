@@ -35,10 +35,16 @@
   min-width: 60rem;
   border-radius: 30;
   overflow-wrap: anywhere;
+  overflow-y: auto;
+  max-height: 60rem;
 }
 
 .border {
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+.CommentsBox {
+  margin-top: 2rem;
 }

@@ -127,8 +127,8 @@ const CodingChallengeDetailsPage = () => {
           </p>
           <pre style={{ whiteSpace: 'pre-wrap' }}>{issue.body}</pre>
         </div>
-        <div className={styles.IssueComments}>
-          <div>
+        <div className={styles.CommentsBox}>
+          <div className={styles.IssueComments}>
             <h3>Kommentare zum Issue #{issue.number}</h3>
             {issue.comments.nodes.length === 0 ? (
               <p>Keine Kommentare vorhanden.</p>
