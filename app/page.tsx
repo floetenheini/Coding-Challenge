@@ -85,26 +85,21 @@ const CodingChallengeLandingPage = () => {
     <>
       <div className={styles.border}>
         <h1 className={styles.h1}>Coding Challenge Jonas Fischer</h1>
-
-        <div className={styles.Issues}>
-          <button className={styles.buttonIssueState} onClick={handleClick}>
-            {isOpen ? 'OPEN' : 'CLOSED'}
-          </button>
-          <div>
-            <h2>Letzten 20 {isOpen ? 'Offenen' : 'Geschlossenen'} Issues für React Repository:</h2>
-            <br />
-            <ul>
-              {issues.map(issue => (
-                <li key={issue.id}>
-                  <Link href={`/${issue.number}`}>
-                    #{issue.number}: {issue.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div>
+          <h2>Letzten 20 {isOpen ? 'Offenen' : 'Geschlossenen'} Issues für React Repository:</h2>
+          <br />
+          {issues.map(issue => (
+            <div className={styles.Issues} key={issue.number}>
+              <Link href={`/${issue.number}`}>
+                #{issue.number}: {issue.title}
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
+      <button className={styles.buttonIssueState} onClick={handleClick}>
+        {isOpen ? 'OPEN' : 'CLOSED'}
+      </button>
     </>
   )
 }
