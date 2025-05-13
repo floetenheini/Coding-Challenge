@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import styles from '../../styles/CodingChallengePage.module.css'
+import Link from 'next/link'
 
 type Comment = {
   id: string
@@ -37,7 +38,6 @@ type GitHubResponse = {
 const CodingChallengeDetailsPage = () => {
   const [issue, setIssue] = useState<IssueDetail | null>(null)
   const [error, setError] = useState<string | null>(null)
-
   const params = useParams()
   const issueNumberRaw = params?.issueID
 
@@ -115,6 +115,9 @@ const CodingChallengeDetailsPage = () => {
     <>
       <div className={styles.border}>
         <h1 className={styles.h1}>More Details!</h1>
+        <Link href="/">
+          <button className={styles.buttonIssueState}>Go Back</button>
+        </Link>
         <div className={styles.IssueInfo}>
           <h2>Details zum Issue #{issue.number}</h2>
           <h3>
