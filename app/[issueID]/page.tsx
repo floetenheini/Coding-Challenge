@@ -116,7 +116,7 @@ const CodingChallengeDetailsPage = () => {
       <div className={styles.border}>
         <h1 className={styles.h1}>More Details!</h1>
         <Link href="/">
-          <button className={styles.buttonIssueState}>Go Back</button>
+          <button className={styles.buttonGoBack}>Go Back</button>
         </Link>
         <div className={styles.IssueInfo}>
           <h2>Details zum Issue #{issue.number}</h2>

@@ -85,3 +85,35 @@
   outline: none;
   box-shadow: 0 0 0 2px rgba(100, 100, 100, 0.3);
 }
+
+.buttonGoBack {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10%;
+  margin-bottom: -2rem;
+  position: fixed;
+  top: 2rem;
+  left: -8%;
+  z-index: 1000;
+}
+
+.buttonGoBack:hover {
+  background-color: #919ef3;
+  border-color: #999;
+}
+
+.buttonGoBack:active {
+  background-color: #e0e0e0;
+  border-color: #666;
+}
+
+.buttonGoBack:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100, 100, 100, 0.3);
+}
